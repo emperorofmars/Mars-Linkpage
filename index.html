@@ -12,38 +12,107 @@
 	<meta property="og:image" content="https://test.squirrel.pub/res/preview.png" />
 	<meta property="og:description" content="All my info and links" />
 	<meta name="twitter:card" content="summary_large_image">
+	<style>
+		img {
+			object-fit: cover;
+		}
+
+		button, a[role=button] {
+			margin: 5px 2.5px;
+		}
+		
+		.avatar-card {
+			border: 2px rgb(61, 58, 78) solid;
+			border-radius: 6px;
+			width: fit-content;
+			padding: 5px;
+		}
+	</style>
 </head>
 <body style="text-align: center;">
 	<main class="container">
 		<div class="grid">
 			<section>
-				<img src="res/portrait.png" style="height: 320px;"/>
+				<img src="res/portrait.png" style="height: 380px;"/>
 				<h1>Hoi, Im Mars</h1>
 				<p>Often my username is  also <strong>Emperor of Mars</strong></p>
-				<p><strong>I make 3d avatar bases and assets for social VR games!</strong><p>
+				<h4><strong>I make 3d avatar bases and assets for social VR games!</strong><h4>
 			</section>
 			<section>
-				<h3>Browse all my products on</h3>
-				<ul>
-					<a role="button" href="https://emperorofmars.itch.io/" style="width: 200px;">Itch</a>
-					<a role="button" href="https://emperorofmars.gumroad.com/" style="width: 200px;">Gumroad</a>
-				</ul>
-				<h3>Socials</h3>
-				<ul>
-					<a role="button" class="outline" rel="me" href="https://squirrel.pub/@mars">Mastodon</a>
-					<a role="button" class="outline" href="https://bsky.app/profile/mars.squirrel.pub">Bluesky</a>
-					<a role="button" class="outline" href="https://www.furaffinity.net/user/emperorofmars">Furaffinity</a>
-					<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">Twatter</a>
-				</ul>
+				<div>
+					<h3>Browse all my products on</h3>
+					<ul>
+						<a role="button" href="https://emperorofmars.itch.io/" style="width: 200px;">Itch</a>
+						<a role="button" href="https://emperorofmars.gumroad.com/" style="width: 200px;">Gumroad</a>
+					</ul>
+				</div>
+				<div>
+					<h3>Socials</h3>
+					<ul>
+						<a role="button" class="outline" rel="me" href="https://squirrel.pub/@mars">Mastodon</a>
+						<a role="button" class="outline" href="https://bsky.app/profile/mars.squirrel.pub">Bluesky</a>
+						<a role="button" class="outline" href="https://www.furaffinity.net/user/emperorofmars">Furaffinity</a>
+						<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">Twatter</a>
+					</ul>
+				</div>
+				<div>
 				<h3>Communities</h3>
-				<ul>
-					<a role="button" class="outline" href="https://discord.gg/MDggMXSttM">Discord Server</a>
-					<a role="button" class="outline" href="https://vrc.group/SQRL.0269">VRChat Group</a>
-				</ul>
+					<ul>
+						<a role="button" class="outline" href="https://discord.gg/MDggMXSttM">Discord Server</a>
+						<a role="button" class="outline" href="https://vrc.group/SQRL.0269">VRChat Group</a>
+					</ul>
+				</div>
 			</section>
 		</div>
 		<article>
-			<header><h3>3d Model & Avatar Fileformat Project</h3></header>
+			<header><h3>Check out my Avatars</h3></header>
+			<main style="overflow-x: auto;">
+				<figure style="display: flex; width: max-content; column-gap: 16px;">
+					<div class="avatar-card">
+						<a href="pages/yac/index.html">
+							<h4>Yet Another Cat</h4>
+							<img src="pages/yac/res/icon.png" style="height: 300px;">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/yac">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yac">Gumroad</a>
+						</div>
+					</div>
+					<div class="avatar-card">
+						<a href="pages/squeak_warrior/index.html">
+							<h4>Warrior of the Squeak</h4>
+							<img src="pages/squeak_warrior/res/icon.png" style="height: 300px;">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/squeak-warrior">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squeak_warrior">Gumroad</a>
+						</div>
+					</div>
+					<div class="avatar-card">
+						<a href="pages/yaf/index.html">
+							<h4>Yet Another Fox</h4>
+							<img src="pages/yaf/res/icon.png" style="height: 300px;">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/yaf">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yaf">Gumroad</a>
+						</div>
+					</div>
+					<div class="avatar-card">
+						<a href="pages/squirrel/index.html">
+							<h4>Squirrel</h4>
+							<img src="pages/squirrel/res/icon.png" style="height: 300px;">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/squirrel">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squirrel">Gumroad</a>
+						</div>
+					</div>
+				</figure>
+			</main>
+		</article>
+		<article>
+			<header><h3>Fileformat Project for 3d Models & Avatars</h3></header>
 			<p>
 				The single relevant format for VR & V-Tubing avatars is a .unitypackage that contains a scene with a setup somewhere.<br>
 				There is no interoperability for avatars. And it is severely lacking for 3d models by themselves.<br>
