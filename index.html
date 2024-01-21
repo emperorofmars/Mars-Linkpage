@@ -20,23 +20,105 @@
 		button, a[role=button] {
 			margin: 5px 2.5px;
 		}
+
+		a {
+			word-break: keep-all;
+			overflow-wrap: normal;
+		}
 		
 		.avatar-card {
-			border: 2px solid;
-			border-radius: 6px;
+			border: 5px solid #372626;
+			border-radius: var(--pico-border-radius);
 			width: fit-content;
 			padding: 5px;
 		}
+		
+		:root {
+			--pico-border-radius: 0.6rem;
+		}
+
+		/* Red color for light color scheme (Default) */
+		/* Can be forced with data-theme="light" */
+		/*[data-theme=light], :root:not([data-theme=dark]) {
+			--pico-color: #f7adad;
+			--pico-h1-color: #f7adad;
+			--pico-h2-color: #f7adad;
+			--pico-h3-color: #f7adad;
+			--pico-h4-color: #f7adad;
+			--pico-h5-color: #f7adad;
+			--pico-h6-color: #f7adad;
+			--pico-background: #150e0e;
+
+			--pico-text-selection-color: rgba(240, 96, 72, 0.25);
+			--pico-primary: #f7adad;
+			--pico-primary-background: #150e0e;
+			--pico-primary-underline: rgba(197, 47, 33, 0.5);
+			--pico-primary-hover: #9b2318;
+			--pico-primary-hover-background: #af291d;
+			--pico-primary-focus: #ea7e7e;
+			--pico-primary-inverse: #fff;
+		}*/
+
+		/* Red color for dark color scheme (Auto) */
+		/* Automatically enabled if user has Dark mode enabled */
+		@media only screen and (prefers-color-scheme: dark) {
+			:root:not([data-theme]) {
+				/*--pico-color: #f7adad;*/
+				--pico-color: #f5cece;
+				--pico-h1-color: var(--pico-color);
+				--pico-h2-color: var(--pico-color);
+				--pico-h3-color: var(--pico-color);
+				--pico-h4-color: var(--pico-color);
+				--pico-h5-color: var(--pico-color);
+				--pico-h6-color: var(--pico-color);
+
+				--pico-background-color: #150e0e;
+				--pico-card-background-color: #1f1515;
+				--pico-card-sectioning-background-color: #271c1c;
+
+				--pico-text-selection-color: rgba(239, 154, 137, 0.188);
+				--pico-primary: var(--pico-color);
+
+				--pico-primary-background: #ea7e7e;
+				--pico-primary-underline: rgba(241, 121, 97, 0.1);
+				--pico-primary-hover: #f7adad;
+				--pico-primary-hover-background: #f7adad;
+				--pico-primary-focus: rgba(241, 121, 97, 0.375);
+				--pico-primary-inverse: #fff;
+			}
+		}
+
+		/* Red color for dark color scheme (Forced) */
+		/* Enabled if forced with data-theme="dark" */
+		/*[data-theme=dark] {
+			--pico-color: #f7adad;
+			--pico-h1-color: #f7adad;
+			--pico-h2-color: #f7adad;
+			--pico-h3-color: #f7adad;
+			--pico-h4-color: #f7adad;
+			--pico-h5-color: #f7adad;
+			--pico-h6-color: #f7adad;
+			--pico-background-color: #150e0e;
+
+			--pico-text-selection-color: rgba(241, 121, 97, 0.1875);
+			--pico-primary: #f17961;
+			--pico-primary-background: #c52f21;
+			--pico-primary-underline: rgba(241, 121, 97, 0.5);
+			--pico-primary-hover: #f5a390;
+			--pico-primary-hover-background: #d93526;
+			--pico-primary-focus: rgba(241, 121, 97, 0.375);
+			--pico-primary-inverse: #fff;
+		}*/
 	</style>
 </head>
 <body style="text-align: center;">
-	<main class="container">
+	<main class="container" >
 		<div class="grid">
-			<section>
+			<section style="border: solid 5px #372626; border-radius: var(--pico-border-radius); padding: 10px;">
 				<img src="res/portrait.png" style="height: 420px;"/>
 				<h1>Hoi, Im Mars</h1>
-				<p>Often my username is  also <strong>Emperor of Mars</strong></p>
-				<h4><strong>I make 3d avatar bases and assets for social VR games!</strong><h4>
+				<p>Often my username is also <strong>Emperor of Mars</strong></p>
+				<h3>I make 3d avatar bases and assets for social VR games!<h3>
 			</section>
 			<section style="display: flex; flex-direction: column; gap: 30px;">
 				<div>
