@@ -28,8 +28,7 @@ a {
 	background-color: var(--mars-color-header);
 }
 
-header {
-	margin: 0;
+header.container {
 	padding: 0;
 }
 
