@@ -37,33 +37,36 @@
 			--pico-border-radius: 0.6rem;
 		}
 
-		/* Red color for light color scheme (Default) */
+		/* Custom color for light color scheme (Default) */
 		/* Can be forced with data-theme="light" */
-		/*[data-theme=light], :root:not([data-theme=dark]) {
-			--pico-color: #f7adad;
-			--pico-h1-color: #f7adad;
-			--pico-h2-color: #f7adad;
-			--pico-h3-color: #f7adad;
-			--pico-h4-color: #f7adad;
-			--pico-h5-color: #f7adad;
-			--pico-h6-color: #f7adad;
-			--pico-background: #150e0e;
+		[data-theme=light], :root:not([data-theme=dark]) {
+			--pico-color: #ea7e7e;
+			--pico-h1-color: var(--pico-color);
+			--pico-h2-color: var(--pico-color);
+			--pico-h3-color: var(--pico-color);
+			--pico-h4-color: var(--pico-color);
+			--pico-h5-color: var(--pico-color);
+			--pico-h6-color: var(--pico-color);
+
+			--pico-background-color: #ffffff;
+			--pico-card-background-color: #ffffff;
+			--pico-card-sectioning-background-color: #ffffff;
 
 			--pico-text-selection-color: rgba(240, 96, 72, 0.25);
-			--pico-primary: #f7adad;
-			--pico-primary-background: #150e0e;
+			--pico-primary: var(--pico-color);
+
+			--pico-primary-background: #ea7e7e;
 			--pico-primary-underline: rgba(197, 47, 33, 0.5);
 			--pico-primary-hover: #9b2318;
 			--pico-primary-hover-background: #af291d;
 			--pico-primary-focus: #ea7e7e;
 			--pico-primary-inverse: #fff;
-		}*/
+		}
 
-		/* Red color for dark color scheme (Auto) */
+		/* Custom color for dark color scheme (Auto) */
 		/* Automatically enabled if user has Dark mode enabled */
 		@media only screen and (prefers-color-scheme: dark) {
 			:root:not([data-theme]) {
-				/*--pico-color: #f7adad;*/
 				--pico-color: #f5cece;
 				--pico-h1-color: var(--pico-color);
 				--pico-h2-color: var(--pico-color);
@@ -88,31 +91,35 @@
 			}
 		}
 
-		/* Red color for dark color scheme (Forced) */
+		/* Custom color for dark color scheme (Forced) */
 		/* Enabled if forced with data-theme="dark" */
-		/*[data-theme=dark] {
-			--pico-color: #f7adad;
-			--pico-h1-color: #f7adad;
-			--pico-h2-color: #f7adad;
-			--pico-h3-color: #f7adad;
-			--pico-h4-color: #f7adad;
-			--pico-h5-color: #f7adad;
-			--pico-h6-color: #f7adad;
-			--pico-background-color: #150e0e;
+		[data-theme=dark] {
+			--pico-color: #f5cece;
+			--pico-h1-color: var(--pico-color);
+			--pico-h2-color: var(--pico-color);
+			--pico-h3-color: var(--pico-color);
+			--pico-h4-color: var(--pico-color);
+			--pico-h5-color: var(--pico-color);
+			--pico-h6-color: var(--pico-color);
 
-			--pico-text-selection-color: rgba(241, 121, 97, 0.1875);
-			--pico-primary: #f17961;
-			--pico-primary-background: #c52f21;
-			--pico-primary-underline: rgba(241, 121, 97, 0.5);
-			--pico-primary-hover: #f5a390;
-			--pico-primary-hover-background: #d93526;
+			--pico-background-color: #150e0e;
+			--pico-card-background-color: #1f1515;
+			--pico-card-sectioning-background-color: #271c1c;
+
+			--pico-text-selection-color: rgba(239, 154, 137, 0.188);
+			--pico-primary: var(--pico-color);
+
+			--pico-primary-background: #ea7e7e;
+			--pico-primary-underline: rgba(241, 121, 97, 0.1);
+			--pico-primary-hover: #f7adad;
+			--pico-primary-hover-background: #f7adad;
 			--pico-primary-focus: rgba(241, 121, 97, 0.375);
 			--pico-primary-inverse: #fff;
-		}*/
+		}
 	</style>
 </head>
 <body style="text-align: center;">
-	<main class="container" >
+	<main class="container">
 		<div class="grid">
 			<section style="border: solid 5px #372626; border-radius: var(--pico-border-radius); padding: 10px;">
 				<img src="res/portrait.png" style="height: 420px;"/>
@@ -120,7 +127,7 @@
 				<p>Often my username is also <strong>Emperor of Mars</strong></p>
 				<h3>I make 3d avatar bases and assets for social VR games!<h3>
 			</section>
-			<section style="display: flex; flex-direction: column; gap: 30px;">
+			<section style="display: flex; flex-direction: column; gap: 30px; padding-top: 25px;">
 				<div>
 					<h3>Browse all my products on</h3>
 					<a role="button" href="https://emperorofmars.itch.io/" style="width: 200px;">Itch</a>
