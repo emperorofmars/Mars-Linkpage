@@ -32,6 +32,10 @@ header.container {
 	padding: 0;
 }
 
+footer {
+	font-size: 0.8rem;
+}
+
 /* Custom color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme=light], :root:not([data-theme=dark]) {
