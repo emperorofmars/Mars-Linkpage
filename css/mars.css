@@ -28,6 +28,11 @@ a {
 	background-color: var(--mars-color-header);
 }
 
+header {
+	margin: 0;
+	padding: 0;
+}
+
 /* Custom color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme=light], :root:not([data-theme=dark]) {
@@ -47,16 +52,27 @@ a {
 	--pico-h4-color: var(--mars-color-text);
 	--pico-h5-color: var(--mars-color-text);
 	--pico-h6-color: var(--mars-color-text);
+
 	--pico-background-color: var(--mars-color-background);
 	--pico-card-background-color: var(--mars-color-card);
 	--pico-card-sectioning-background-color: var(--mars-color-header);
 	--pico-text-selection-color: var(--mars-color-secondary);
+
 	--pico-primary: var(--mars-color-text);
 	--pico-primary-background: var(--mars-color-interactable);
 	--pico-primary-underline: var(--mars-color-border);
 	--pico-primary-hover: var(--mars-color-highlight);
 	--pico-primary-hover-background: var(--mars-color-highlight);
 	--pico-primary-focus: var(--mars-color-text);
+	--pico-primary-inverse: #fff;
+
+	--pico-secondary: var(--mars-color-text);
+	--pico-secondary-background: var(--mars-color-secondary);
+	--pico-secondary-underline: var(--mars-color-border);
+	--pico-secondary-hover: var(--mars-color-highlight);
+	--pico-secondary-hover-background: var(--mars-color-header);
+	--pico-primary-focus: var(--mars-color-text);
+
 	--pico-primary-inverse: #fff;
 }
 
@@ -80,16 +96,27 @@ a {
 		--pico-h4-color: var(--mars-color-text);
 		--pico-h5-color: var(--mars-color-text);
 		--pico-h6-color: var(--mars-color-text);
+
 		--pico-background-color: var(--mars-color-background);
 		--pico-card-background-color: var(--mars-color-card);
 		--pico-card-sectioning-background-color: var(--mars-color-header);
 		--pico-text-selection-color: var(--mars-color-secondary);
+
 		--pico-primary: var(--mars-color-text);
 		--pico-primary-background: var(--mars-color-interactable);
 		--pico-primary-underline: var(--mars-color-border);
 		--pico-primary-hover: var(--mars-color-highlight);
 		--pico-primary-hover-background: var(--mars-color-highlight);
 		--pico-primary-focus: var(--mars-color-text);
+		--pico-primary-inverse: #fff;
+
+		--pico-secondary: var(--mars-color-text);
+		--pico-secondary-background: var(--mars-color-secondary);
+		--pico-secondary-underline: var(--mars-color-border);
+		--pico-secondary-hover: var(--mars-color-highlight);
+		--pico-secondary-hover-background: var(--mars-color-header);
+		--pico-primary-focus: var(--mars-color-text);
+
 		--pico-primary-inverse: #fff;
 	}
 }
@@ -113,15 +140,26 @@ a {
 	--pico-h4-color: var(--mars-color-text);
 	--pico-h5-color: var(--mars-color-text);
 	--pico-h6-color: var(--mars-color-text);
+
 	--pico-background-color: var(--mars-color-background);
 	--pico-card-background-color: var(--mars-color-card);
 	--pico-card-sectioning-background-color: var(--mars-color-header);
 	--pico-text-selection-color: var(--mars-color-secondary);
+
 	--pico-primary: var(--mars-color-text);
 	--pico-primary-background: var(--mars-color-interactable);
 	--pico-primary-underline: var(--mars-color-border);
 	--pico-primary-hover: var(--mars-color-highlight);
 	--pico-primary-hover-background: var(--mars-color-highlight);
 	--pico-primary-focus: var(--mars-color-text);
+	--pico-primary-inverse: #fff;
+
+	--pico-secondary: var(--mars-color-text);
+	--pico-secondary-background: var(--mars-color-secondary);
+	--pico-secondary-underline: var(--mars-color-border);
+	--pico-secondary-hover: var(--mars-color-highlight);
+	--pico-secondary-hover-background: var(--mars-color-header);
+	--pico-primary-focus: var(--mars-color-text);
+	
 	--pico-primary-inverse: #fff;
 }
