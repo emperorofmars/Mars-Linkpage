@@ -6,148 +6,52 @@
 	<title>Mars' Linksite</title>
 	<link rel="shortcut icon" href="res/paw5.svg" />
 	<link rel="stylesheet" href="css/pico.min.css">
+	<link rel="stylesheet" href="css/mars.css">
 	<meta property="og:title" content="Mars' Linksite" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://test.squirrel.pub" />
 	<meta property="og:image" content="https://test.squirrel.pub/res/preview.png" />
 	<meta property="og:description" content="All my info and links" />
 	<meta name="twitter:card" content="summary_large_image">
-	<style>
-		img {
-			object-fit: cover;
-		}
-
-		button, a[role=button] {
-			margin: 5px 2.5px;
-		}
-
-		a {
-			word-break: keep-all;
-			overflow-wrap: normal;
-		}
-		
-		.avatar-card {
-			border: 5px solid #372626;
-			border-radius: var(--pico-border-radius);
-			width: fit-content;
-			padding: 5px;
-		}
-		
-		:root {
-			--pico-border-radius: 0.6rem;
-		}
-
-		/* Custom color for light color scheme (Default) */
-		/* Can be forced with data-theme="light" */
-		[data-theme=light], :root:not([data-theme=dark]) {
-			--pico-color: #ea7e7e;
-			--pico-h1-color: var(--pico-color);
-			--pico-h2-color: var(--pico-color);
-			--pico-h3-color: var(--pico-color);
-			--pico-h4-color: var(--pico-color);
-			--pico-h5-color: var(--pico-color);
-			--pico-h6-color: var(--pico-color);
-
-			--pico-background-color: #ffffff;
-			--pico-card-background-color: #ffffff;
-			--pico-card-sectioning-background-color: #ffffff;
-
-			--pico-text-selection-color: rgba(240, 96, 72, 0.25);
-			--pico-primary: var(--pico-color);
-
-			--pico-primary-background: #ea7e7e;
-			--pico-primary-underline: rgba(197, 47, 33, 0.5);
-			--pico-primary-hover: #9b2318;
-			--pico-primary-hover-background: #af291d;
-			--pico-primary-focus: #ea7e7e;
-			--pico-primary-inverse: #fff;
-		}
-
-		/* Custom color for dark color scheme (Auto) */
-		/* Automatically enabled if user has Dark mode enabled */
-		@media only screen and (prefers-color-scheme: dark) {
-			:root:not([data-theme]) {
-				--pico-color: #f5cece;
-				--pico-h1-color: var(--pico-color);
-				--pico-h2-color: var(--pico-color);
-				--pico-h3-color: var(--pico-color);
-				--pico-h4-color: var(--pico-color);
-				--pico-h5-color: var(--pico-color);
-				--pico-h6-color: var(--pico-color);
-
-				--pico-background-color: #150e0e;
-				--pico-card-background-color: #1f1515;
-				--pico-card-sectioning-background-color: #271c1c;
-
-				--pico-text-selection-color: rgba(239, 154, 137, 0.188);
-				--pico-primary: var(--pico-color);
-
-				--pico-primary-background: #ea7e7e;
-				--pico-primary-underline: rgba(241, 121, 97, 0.1);
-				--pico-primary-hover: #f7adad;
-				--pico-primary-hover-background: #f7adad;
-				--pico-primary-focus: rgba(241, 121, 97, 0.375);
-				--pico-primary-inverse: #fff;
-			}
-		}
-
-		/* Custom color for dark color scheme (Forced) */
-		/* Enabled if forced with data-theme="dark" */
-		[data-theme=dark] {
-			--pico-color: #f5cece;
-			--pico-h1-color: var(--pico-color);
-			--pico-h2-color: var(--pico-color);
-			--pico-h3-color: var(--pico-color);
-			--pico-h4-color: var(--pico-color);
-			--pico-h5-color: var(--pico-color);
-			--pico-h6-color: var(--pico-color);
-
-			--pico-background-color: #150e0e;
-			--pico-card-background-color: #1f1515;
-			--pico-card-sectioning-background-color: #271c1c;
-
-			--pico-text-selection-color: rgba(239, 154, 137, 0.188);
-			--pico-primary: var(--pico-color);
-
-			--pico-primary-background: #ea7e7e;
-			--pico-primary-underline: rgba(241, 121, 97, 0.1);
-			--pico-primary-hover: #f7adad;
-			--pico-primary-hover-background: #f7adad;
-			--pico-primary-focus: rgba(241, 121, 97, 0.375);
-			--pico-primary-inverse: #fff;
-		}
-	</style>
 </head>
 <body style="text-align: center;">
 	<main class="container">
 		<div class="grid">
-			<section style="border: solid 5px #372626; border-radius: var(--pico-border-radius); padding: 10px;">
+			<section style="border: solid 5px var(--mars-color-border); border-radius: var(--pico-border-radius); padding: 10px;">
 				<img src="res/portrait.png" style="height: 420px;"/>
 				<h1>Hoi, Im Mars</h1>
 				<p>Often my username is also <strong>Emperor of Mars</strong></p>
 				<h3>I make 3d avatar bases and assets for social VR games!<h3>
 			</section>
-			<section style="display: flex; flex-direction: column; gap: 30px; padding-top: 25px;">
+			<section style="display: flex; flex-direction: column; gap: 30px; padding-top: 30px;">
 				<div>
 					<h3>Browse all my products on</h3>
-					<a role="button" href="https://emperorofmars.itch.io/" style="width: 200px;">Itch</a>
-					<a role="button" href="https://emperorofmars.gumroad.com/" style="width: 200px;">Gumroad</a>
+					<div>
+						<a role="button" href="https://emperorofmars.itch.io/" style="width: 200px;">Itch</a>
+						<a role="button" href="https://emperorofmars.gumroad.com/" style="width: 200px;">Gumroad</a>
+					</div>
 				</div>
 				<div>
 					<h3>Socials</h3>
-					<a role="button" class="outline" rel="me" href="https://squirrel.pub/@mars">Mastodon</a>
-					<a role="button" class="outline" href="https://bsky.app/profile/mars.squirrel.pub">Bluesky</a>
-					<a role="button" class="outline" href="https://www.furaffinity.net/user/emperorofmars">Furaffinity</a>
-					<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">Twatter</a>
+					<div>
+						<a role="button" class="outline" rel="me" href="https://squirrel.pub/@mars">Mastodon</a>
+						<a role="button" class="outline" href="https://bsky.app/profile/mars.squirrel.pub">Bluesky</a>
+						<a role="button" class="outline" href="https://www.furaffinity.net/user/emperorofmars">Furaffinity</a>
+						<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">Twatter</a>
+					</div>
 				</div>
 				<div>
 					<h3>Communities</h3>
-					<a role="button" class="outline" href="https://discord.gg/MDggMXSttM">Discord Server</a>
-					<a role="button" class="outline" href="https://vrc.group/SQRL.0269">VRChat Group</a>
+					<div>
+						<a role="button" class="outline" href="https://discord.gg/MDggMXSttM">Discord Server</a>
+						<a role="button" class="outline" href="https://vrc.group/SQRL.0269">VRChat Group</a>
+					</div>
 				</div>
 				<div>
 					<h3>Coding Projects</h3>
-					<a role="button" class="outline" href="https://github.com/emperorofmars">Github</a>
+					<div>
+						<a role="button" class="outline" href="https://github.com/emperorofmars">Github</a>
+					</div>
 				</div>
 			</section>
 		</div>
