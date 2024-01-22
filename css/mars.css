@@ -36,6 +36,11 @@ footer {
 	font-size: 0.8rem;
 }
 
+.big-button {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
 /* Custom color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme=light], :root:not([data-theme=dark]) {
@@ -84,7 +89,7 @@ footer {
 @media only screen and (prefers-color-scheme: dark) {
 	:root:not([data-theme]) {
 		--mars-color-text: #e7c0c0;
-		--mars-color-interactable: #ea7e7e;
+		--mars-color-interactable: #bc6666;
 		--mars-color-highlight: #f7adad;
 		--mars-color-secondary: #372626;
 		--mars-color-secondary-highlight: #423434;
@@ -129,7 +134,7 @@ footer {
 /* Enabled if forced with data-theme="dark" */
 [data-theme=dark] {
 	--mars-color-text: #e7c0c0;
-	--mars-color-interactable: #ea7e7e;
+	--mars-color-interactable: #bc6666;
 	--mars-color-highlight: #f7adad;
 	--mars-color-secondary: #372626;
 	--mars-color-secondary-highlight: #543f3f;
