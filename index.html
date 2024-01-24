@@ -26,14 +26,16 @@
 </head>
 <body style="text-align: center;">
 	<main class="container">
-		<div class="grid">
-			<section style="border: solid 5px var(--mars-color-border); border-radius: var(--pico-border-radius); padding: 10px;">
-				<img src="res/portrait.png" style="height: 420px;"/>
-				<h1>Hoi, I'm Mars</h1>
-				<p>Often my username is also <strong>Emperor of Mars</strong></p>
-				<h3>I make 3D avatar bases and assets for social VR games!<h3>
-			</section>
-			<section style="display: flex; flex-direction: column; gap: 30px; padding-top: 30px;">
+		<section class="grid">
+			<div style="border: solid 5px var(--mars-color-border); border-radius: var(--pico-border-radius); display: flex; flex-direction: column; gap: 40px; margin: auto; height: 100%; padding: 0 30px 10px 10px;">
+				<img src="res/portrait.png" style="margin: 0 30px; width: 300px; margin: auto;"/>
+				<div>
+					<h1>Hoi, I'm Mars</h1>
+					<p>Often my username is also <strong>Emperor of Mars</strong></p>
+					<h3>I make 3D avatar bases and assets for social VR games!<h3>
+				</div>
+			</div>
+			<div style="display: flex; flex-direction: column; gap: 40px; margin: auto; justify-content: space-evenly; height: 100%; padding: 30px 0;">
 				<div>
 					<h3>Browse all my products on</h3>
 					<div>
@@ -63,12 +65,12 @@
 						<a role="button" class="outline" href="https://github.com/emperorofmars">Github</a>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 		<article>
 			<header><h3>Check out my Avatars</h3></header>
 			<main>
-				<section style="display: flex; flex-wrap: no-wrap; gap: 16px; padding-bottom: 10px; margin-bottom: 20px; overflow-x: auto; width: 100%; justify-content: safe center;">
+				<section style="display: grid; grid-auto-flow: column; gap: 16px; padding-bottom: 10px; margin-bottom: 20px; overflow-x: auto; width: 100%; justify-content: safe center;">
 					<div class="showcase">
 						<!--<a href="pages/yac/yac.html">-->
 							<h4>Yet Another Cat</h4>
@@ -136,7 +138,7 @@
 		</article>
 	</main>
 
-	<footer>
+	<footer class="container">
 		No cookies, no tracking, no bullshit.<br><br>
 		<a href="https://www.mozilla.org/en-US/firefox/browsers/">Use Firefox, the only non-corrupt Web-Browser!</a><br>
 		<a href="https://ublockorigin.com/">Always use Ublock Origin, its your condom for the Web!</a>
