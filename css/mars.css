@@ -17,14 +17,15 @@ a {
 	overflow-wrap: normal;
 }
 
-.avatar-card {
+.showcase {
 	border: 5px solid var(--mars-color-border);
 	border-radius: var(--pico-border-radius);
-	width: fit-content;
-	padding: 5px;
+	width: 300px;
+	flex-shrink: 0;
+	padding: 10px 0;
 }
 
-.avatar-card:hover {
+.showcase:hover {
 	background-color: var(--mars-color-header);
 }
 

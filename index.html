@@ -68,67 +68,67 @@
 		<article>
 			<header><h3>Check out my Avatars</h3></header>
 			<main>
-				<section style="overflow-x: auto;">
-					<figure style="display: flex; width: max-content; column-gap: 16px; margin-bottom: 10px;">
-						<div class="avatar-card">
-							<!--<a href="pages/yac/yac.html">-->
-								<h4>Yet Another Cat</h4>
-								<img src="pages/yac/res/icon.png" style="height: 300px;">
-							<!--</a><br>-->
-							<!--<div class="grid">
-								<a role="button" class="outline" href="https://emperorofmars.itch.io/yac">Itch</a>
-								<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yac">Gumroad</a>-->
+				<section style="display: flex; flex-wrap: no-wrap; overflow-x: auto; gap: 16px; padding-bottom: 10px;">
+					<div class="showcase">
+						<!--<a href="pages/yac/yac.html">-->
+							<h4>Yet Another Cat</h4>
+							<img src="pages/yac/res/icon.png">
+						<!--</a><br>-->
+						<div class="grid">
+							<!--<a role="button" class="outline" href="https://emperorofmars.itch.io/yac">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yac">Gumroad</a>-->
 							<h5>Coming Soon!</h5>
-							</div>
 						</div>
-						<div class="avatar-card">
-							<a href="pages/squeak_warrior/squeak.html">
-								<h4>Warrior of the Squeak</h4>
-								<img src="pages/squeak_warrior/res/icon.png" style="height: 300px;">
-							</a><br>
-							<div class="grid">
-								<a role="button" class="outline" href="https://emperorofmars.itch.io/squeak-warrior">Itch</a>
-								<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squeak_warrior">Gumroad</a>
-							</div>
+					</div>
+					<div class="showcase">
+						<a href="pages/squeak_warrior/squeak.html">
+							<h4>Warrior of the Squeak</h4>
+							<img src="pages/squeak_warrior/res/icon.png">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/squeak-warrior">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squeak_warrior">Gumroad</a>
 						</div>
-						<div class="avatar-card">
-							<a href="pages/yaf/yaf.html">
-								<h4>Yet Another Fox</h4>
-								<img src="pages/yaf/res/icon.png" style="height: 300px;">
-							</a><br>
-							<div class="grid">
-								<a role="button" class="outline" href="https://emperorofmars.itch.io/yaf">Itch</a>
-								<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yaf">Gumroad</a>
-							</div>
+					</div>
+					<div class="showcase">
+						<a href="pages/yaf/yaf.html">
+							<h4>Yet Another Fox</h4>
+							<img src="pages/yaf/res/icon.png">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/yaf">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yaf">Gumroad</a>
 						</div>
-						<div class="avatar-card">
-							<a href="pages/squirrel/squirrel.html">
-								<h4>Squirrel</h4>
-								<img src="pages/squirrel/res/icon.png" style="height: 300px;">
-							</a><br>
-							<div class="grid">
-								<a role="button" class="outline" href="https://emperorofmars.itch.io/squirrel">Itch</a>
-								<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squirrel">Gumroad</a>
-							</div>
+					</div>
+					<div class="showcase">
+						<a href="pages/squirrel/squirrel.html">
+							<h4>Squirrel</h4>
+							<img src="pages/squirrel/res/icon.png">
+						</a><br>
+						<div class="grid">
+							<a role="button" class="outline" href="https://emperorofmars.itch.io/squirrel">Itch</a>
+							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squirrel">Gumroad</a>
 						</div>
-					</figure>
+					</div>
 				</section>
-				<section style="margin-bottom: 0;">
+				<div style="text-align: left;">
 					If you need help with an avatar, please refer to the <a role="button" class="secondary" href="https://avatar-guide.squirrel.pub/">Avatar Guide</a>
-				</section>
+				</div>
 			</main>
 		</article>
 		<article>
 			<header><h3>Fileformat Project for 3D Models & Avatars</h3></header>
-			<p>
-				The single relevant format for VR & V-Tubing avatars is a .unitypackage that contains a scene with a setup somewhere.<br>
-				There is no interoperability for avatars. And it is severely lacking for 3D models by themselves.<br>
-				Using those avatars as an end-user is prohibitively difficult as it requires the use of a Game-Engine like Unity.
-			</p>
-			<p>
-				I'm trying to improve that, by creating a prototype/proof of concept of an extensible file format for 3D models.<br>
-				<strong>You can view my progress in the <a role="button" class="secondary" href="https://github.com/emperorofmars/stf-unity">STF Git Repository</a></strong>
-			</p>
+			<main style="text-align: left;">
+				<p>
+					The single relevant format for VR & V-Tubing avatars is a .unitypackage that contains a scene with a setup somewhere.<br>
+					There is no interoperability for avatars. And it is severely lacking for 3D models by themselves.<br>
+					Using those avatars as an end-user is prohibitively difficult as it requires the use of a Game-Engine like Unity.
+				</p>
+				<p>
+					I'm trying to improve that, by creating a prototype/proof of concept of an extensible file format for 3D models.<br>
+					<strong>You can view my progress in the <a role="button" class="secondary" href="https://github.com/emperorofmars/stf-unity">STF Git Repository</a></strong>
+				</p>
+			</main>
 		</article>
 	</main>
 
