@@ -1,41 +1,26 @@
+---
+is_home: true
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Mars' Linksite</title>
-	<link rel="shortcut icon" href="res/paw5.svg" />
-	<link rel="stylesheet" href="css/pico.min.css">
-	<link rel="stylesheet" href="css/mars.css">
-	<link rel="home" href="https://mars.squirrel.pub">
-	<meta property="og:title" content="Mars' Linksite" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://mars.squirrel.pub" />
-	<meta property="og:image" content="https://mars.squirrel.pub/res/preview.png" />
-	<meta property="og:description" content="All my info and links" />
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="robots" content="index, follow, noai, noimageai">
-	<meta property="og:see_also" content="https://squirrel.pub/@mars" />
-	<meta property="og:see_also" content="https://bsky.app/profile/mars.squirrel.pub" />
-	<meta property="og:see_also" content="https://www.furaffinity.net/user/emperorofmars" />
-	<meta property="og:see_also" content="https://twitter.com/Emperor_of_Mars" />
-	<meta property="og:see_also" content="https://github.com/emperorofmars" />
-	<meta property="og:see_also" content="https://emperorofmars.itch.io/" />
-	<meta property="og:see_also" content="https://emperorofmars.gumroad.com/" />
-	<meta property="og:see_also" content="https://www.youtube.com/@emperor_of_mars" />
+	{% include head.html %}
 </head>
 <body style="text-align: center;">
+	{% include header.html %}
+
 	<main class="container">
 		<section class="grid">
-			<div style="border: solid 5px var(--mars-color-border); border-radius: var(--pico-border-radius); display: flex; flex-direction: column; gap: 40px; margin: auto; height: 100%; padding: 0 30px 10px 10px;">
-				<img src="res/portrait.png" style="margin: 0 30px; width: 300px; margin: auto;"/>
+			<div class="border" style="border-width: 5px; display: flex; flex-direction: column; gap: 40px; margin: auto; height: 100%; padding: 0 30px 10px 10px;">
+				<img src="{{ '/assets/img/portrait.png' | relative_url }}" style="margin: 0 30px; width: 300px; margin: auto;"/>
 				<div>
 					<h1>Hoi, I'm Mars</h1>
 					<p>Often my username is also <strong>Emperor of Mars</strong></p>
 					<h3>I make 3D avatar bases and assets for social VR games!<h3>
 				</div>
 			</div>
-			<div style="display: flex; flex-direction: column; gap: 40px; margin: auto; justify-content: space-evenly; height: 100%; padding: 30px 0;">
+			<div class="card" style="display: flex; flex-direction: column; gap: 40px; margin: auto; justify-content: space-evenly; height: 100%; padding: 30px 0;">
 				<div>
 					<h3>Browse all my products on</h3>
 					<div>
@@ -70,56 +55,31 @@
 		<article>
 			<header><h3>Check out my Avatars</h3></header>
 			<main>
-				<section style="display: grid; grid-auto-flow: column; gap: 16px; padding-bottom: 10px; margin-bottom: 20px; overflow-x: auto; width: 100%; justify-content: safe center;">
-					<div class="showcase">
-						<!--<a href="pages/yac/yac.html">-->
-							<h4>Yet Another Cat</h4>
-							<img src="pages/yac/res/icon.png">
-						<!--</a><br>-->
-						<div class="grid">
-							<!--<a role="button" class="outline" href="https://emperorofmars.itch.io/yac">Itch</a>
-							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yac">Gumroad</a>-->
+				<section style="display: grid; grid-auto-flow: column; gap: 16px; margin-bottom: 20px; overflow-x: auto; width: 100%; justify-content: safe center;">
+					{% for post in site.posts %}
+						<div class="showcase border">
+							{% if post.is_page != false %}
+							<a href="{{post.url}}">
+								<div style="height: 100px;">
+									<h4 style="padding: 10px;">{{post.title}}</h4>
+								</div>
+								<img src="{{post.preview}}">
+							</a>
+							{% else %}
+							<div style="height: 100px;"><h4 style="padding: 10px;">{{post.title}}</h4></div>
+							<img src="{{post.preview}}">
+							{% endif %}
+							{% if post.has_links != false %}
+							<div style="padding: 10px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+								<a role="button" class="outline" style="flex: 1;" href="{{post.link_itch}}">Itch</a>
+								<a role="button" class="outline" style="flex: 1;" href="{{post.link_gumroad}}">Gumroad</a>
+							</div>
+							{% else %}
 							<h5>Coming Soon!</h5>
+							{% endif %}
 						</div>
-					</div>
-					<div class="showcase">
-						<a href="pages/squeak_warrior/squeak.html">
-							<h4>Warrior of the Squeak</h4>
-							<img src="pages/squeak_warrior/res/icon.png">
-						</a><br>
-						<div class="grid">
-							<a role="button" class="outline" href="https://emperorofmars.itch.io/squeak-warrior">Itch</a>
-							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squeak_warrior">Gumroad</a>
-						</div>
-					</div>
-					<div class="showcase">
-						<a href="pages/yaf/yaf.html">
-							<h4>Yet Another Fox</h4>
-							<img src="pages/yaf/res/icon.png">
-						</a><br>
-						<div class="grid">
-							<a role="button" class="outline" href="https://emperorofmars.itch.io/yaf">Itch</a>
-							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/yaf">Gumroad</a>
-						</div>
-					</div>
-					<div class="showcase">
-						<a href="pages/squirrel/squirrel.html">
-							<h4>Squirrel</h4>
-							<img src="pages/squirrel/res/icon.png">
-						</a><br>
-						<div class="grid">
-							<a role="button" class="outline" href="https://emperorofmars.itch.io/squirrel">Itch</a>
-							<a role="button" class="outline" href="https://emperorofmars.gumroad.com/l/squirrel">Gumroad</a>
-						</div>
-					</div>
+					{% endfor %}
 				</section>
-				<p>
-					If you need help with an avatar, please refer to the <a role="button" class="secondary" href="https://avatar-guide.squirrel.pub/">Avatar Guide</a>
-				</p>
-				<p style="border-top: 4px solid var(--mars-color-border);">
-					<h5>Awesome people who's amazing texture work is contained in my products</h5>
-					<strong><a role="button" class="outline" href="https://astralmimi.art">Astralmimi</a></strong>
-				</p>
 			</main>
 		</article>
 		<article>
@@ -138,12 +98,6 @@
 		</article>
 	</main>
 
-	<footer class="container">
-		No cookies, no tracking, no bullshit.<br><br>
-		<a href="https://www.mozilla.org/en-US/firefox/browsers/">Use Firefox, the only non-corrupt Web-Browser!</a><br>
-		<a href="https://ublockorigin.com/">Always use Ublock Origin, its your condom for the Web!</a>
-		<br><br>
-		<a href="https://github.com/about">Hosted on Github Pages</a>
-	</footer>
+	{% include footer.html %}
 </body>
 </html>

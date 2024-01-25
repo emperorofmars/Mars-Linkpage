@@ -1,4 +1,5 @@
-@charset "UTF-8";
+---
+---
 
 :root {
 	--pico-border-radius: 0.6rem;
@@ -12,21 +13,19 @@ button, a[role=button] {
 	margin: 5px 2.5px;
 }
 
+.big-button {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
 a {
 	word-break: keep-all;
 	overflow-wrap: normal;
 }
 
-.showcase {
-	border: 5px solid var(--mars-color-border);
-	border-radius: var(--pico-border-radius);
-	width: 300px;
-	flex-shrink: 0;
-	padding: 10px 0;
-}
-
-.showcase:hover {
-	background-color: var(--mars-color-header);
+.link-row {
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 header.container {
@@ -37,10 +36,23 @@ footer {
 	font-size: 0.8rem;
 }
 
-.big-button {
-	font-size: 1.5rem;
-	font-weight: 700;
+.border {
+	border: solid 5px var(--mars-color-border);
+	border-radius: var(--pico-border-radius);
+	padding: 10px;
 }
+
+.showcase {
+	max-width: 320px;
+	min-width: 200px;
+	flex-shrink: 0;
+	padding: 0;
+}
+
+.showcase:hover {
+	background-color: var(--mars-color-header);
+}
+
 
 /* Custom color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
