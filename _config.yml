@@ -31,6 +31,17 @@ url: "https://mars.squirrel.pub" # the base hostname & protocol for your site, e
 icon: /assets/img/favicon.svg
 og_image: /assets/img/preview.png
 
+meta_see_also:
+  - "https://squirrel.pub/@mars"
+  - "https://bsky.app/profile/mars.squirrel.pub"
+  - "https://www.furaffinity.net/user/emperorofmars"
+  - "https://twitter.com/Emperor_of_Mars"
+  - "https://github.com/emperorofmars"
+  - "https://emperorofmars.itch.io/"
+  - "https://emperorofmars.gumroad.com/"
+  - "https://www.youtube.com/@emperor_of_mars"
+
+
 # Build settings
 # theme: minima
 plugins:
