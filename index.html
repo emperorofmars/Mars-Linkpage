@@ -12,7 +12,7 @@ is_home: true
 
 	<main class="container">
 		<section class="grid">
-			<div class="border" style="border-width: 5px; display: flex; flex-direction: column; gap: 40px; margin: auto; height: 100%; padding: 0 30px 10px 10px;">
+			<div class="col border" style="border-width: 5px; gap: 40px; margin: auto; height: 100%; padding: 10px;">
 				<img src="{{ '/assets/img/portrait.png' | relative_url }}" style="margin: 0 30px; width: 300px; margin: auto;"/>
 				<div>
 					<h1>Hoi, I'm Mars</h1>
@@ -20,33 +20,33 @@ is_home: true
 					<h3>I make 3D avatar bases and assets for social VR games!<h3>
 				</div>
 			</div>
-			<div class="card" style="display: flex; flex-direction: column; gap: 40px; margin: auto; justify-content: space-evenly; height: 100%; padding: 30px 0;">
+			<div class="col" style="gap: 40px; margin: auto; justify-content: space-evenly; height: 100%; padding: 30px 0;">
 				<div>
 					<h3>Browse all my products on</h3>
-					<div>
-						<a role="button" class="big-button" href="https://emperorofmars.itch.io/" style="min-width: 200px;">Itch</a>
-						<a role="button" class="big-button" href="https://emperorofmars.gumroad.com/" style="min-width: 200px;">Gumroad</a>
+					<div class="row">
+						<a role="button" class="big-button" href="https://emperorofmars.itch.io/" style="width: 200px;"><img src="/assets/logos/itch_io_icon.svg"><span>Itch</span></a>
+						<a role="button" class="big-button" href="https://emperorofmars.gumroad.com/" style="width: 200px;"><span>Gumroad</span></a>
 					</div>
 				</div>
 				<div>
 					<h3>Socials</h3>
-					<div>
+					<div class="row">
 						<a role="button" class="outline" rel="me" href="https://squirrel.pub/@mars">Mastodon</a>
 						<a role="button" class="outline" href="https://bsky.app/profile/mars.squirrel.pub">Bluesky</a>
 						<a role="button" class="outline" href="https://www.furaffinity.net/user/emperorofmars">Furaffinity</a>
-						<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">Twatter</a>
+						<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">🤮 Twatter</a>
 					</div>
 				</div>
 				<div>
 					<h3>Communities</h3>
-					<div>
+					<div class="row">
 						<a role="button" class="outline" href="https://discord.gg/MDggMXSttM">Discord Server</a>
 						<a role="button" class="outline" href="https://vrc.group/SQRL.0269">VRChat Group</a>
 					</div>
 				</div>
 				<div>
 					<h3>Coding Projects</h3>
-					<div>
+					<div class="row">
 						<a role="button" class="outline" href="https://github.com/emperorofmars">Github</a>
 					</div>
 				</div>
@@ -55,31 +55,38 @@ is_home: true
 		<article>
 			<header><h3>Check out my Avatars</h3></header>
 			<main>
-				<section style="display: grid; grid-auto-flow: column; gap: 16px; margin-bottom: 20px; overflow-x: auto; width: 100%; justify-content: safe center;">
+				<section class="row-scroll" style="gap: 16px; padding-bottom: 20px; margin-bottom: 20px;">
 					{% for post in site.posts %}
-						<div class="showcase border">
+						<div class="col showcase border {% if post.is_page != false %}showcase-link{% endif %}">
 							{% if post.is_page != false %}
-							<a href="{{post.url}}">
-								<div style="height: 100px;">
-									<h4 style="padding: 10px;">{{post.title}}</h4>
-								</div>
+							<a class="col" style="flex: 1;" href="{{post.url}}">
+								<div class="row" style="flex: 1;"><h4 style="margin-bottom: 0; padding: 20px 10px;">{{post.title}}</h4></div>
 								<img src="{{post.preview}}">
 							</a>
 							{% else %}
-							<div style="height: 100px;"><h4 style="padding: 10px;">{{post.title}}</h4></div>
-							<img src="{{post.preview}}">
+							<div class="col" style="flex: 1;">
+								<div class="row" style="flex: 1;"><h4 style="margin-bottom: 0; padding: 20px 10px;">{{post.title}}</h4></div>
+								<img src="{{post.preview}}">
+							</div>
 							{% endif %}
 							{% if post.has_links != false %}
-							<div style="padding: 10px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
-								<a role="button" class="outline" style="flex: 1;" href="{{post.link_itch}}">Itch</a>
-								<a role="button" class="outline" style="flex: 1;" href="{{post.link_gumroad}}">Gumroad</a>
+							<div class="row" style="gap: 10px; padding: 10px;">
+								<a role="button" class="outline" style="flex: 1; min-width: 100px;" href="{{post.link_itch}}">Itch</a>
+								<a role="button" class="outline" style="flex: 1; min-width: 100px;" href="{{post.link_gumroad}}">Gumroad</a>
 							</div>
 							{% else %}
-							<h5>Coming Soon!</h5>
+							<div class="row" style="flex: 1;"><h5 style="margin: auto;">Coming Soon!</h5></div>
 							{% endif %}
 						</div>
 					{% endfor %}
 				</section>
+				<p>
+					If you need help with an avatar, please refer to the <a role="button" class="secondary" href="https://avatar-guide.squirrel.pub/">Avatar Guide</a>
+				</p>
+				<p style="border-top: 4px solid var(--mars-color-border);">
+					<h5>Awesome people who's amazing texture work is contained in my products</h5>
+					<strong><a role="button" class="outline" href="https://astralmimi.art">Astralmimi</a></strong>
+				</p>
 			</main>
 		</article>
 		<article>
