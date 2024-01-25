@@ -11,9 +11,9 @@
 	<main class="container">
 		<h1>{{page.title}}</h1>
 		<p>{{page.description}}</p>
-		<div class="grid">
-			<a role="button" class="big-button" href="{{post.link_itch}}">Itch</a>
-			<a role="button" class="big-button" href="{{post.link_gumroad}}">Gumroad</a>
+		<div class="row" style="gap: 20px;">
+			<a role="button" class="big-button" style="flex: 1;" href="{{post.link_itch}}">Itch</a>
+			<a role="button" class="big-button" style="flex: 1;" href="{{post.link_gumroad}}">Gumroad</a>
 		</div>
 		<img src="{{page.cover-image}}" style="margin-top: 30px; border-radius: var(--pico-border-radius);">
 	</main>
