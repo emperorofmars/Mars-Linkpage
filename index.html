@@ -57,6 +57,7 @@ is_home: true
 			<main>
 				<section class="row-scroll" style="gap: 16px; padding-bottom: 20px; margin-bottom: 20px;">
 					{% for post in site.posts %}
+						{% if post.hidden != true %}
 						<div class="col showcase border {% if post.is_page != false %}showcase-link{% endif %}">
 							{% if post.is_page != false %}
 							<a class="col" style="flex: 1;" href="{{post.url}}">
@@ -78,6 +79,7 @@ is_home: true
 							<div class="row" style="flex: 1;"><h5 style="margin: auto;">Coming Soon!</h5></div>
 							{% endif %}
 						</div>
+						{% endif %}
 					{% endfor %}
 				</section>
 				<p>
