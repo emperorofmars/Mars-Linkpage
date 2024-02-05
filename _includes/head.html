@@ -8,7 +8,7 @@
 {% if page.title %}<meta property="og:title" content="{{page.title}}" />{% else %}<meta property="og:title" content="{{site.title}}" />{% endif %}
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ site.url | append: page.url }}" />
-{% if page.og-image %}<meta property="og:image" content="{{ site.url | append: page.og_image}}" />{% else %}<meta property="og:image" content="{{ site.url | append: site.og_image}}" />{% endif %}
+{% if page.og-image %}<meta property="og:image" content="{{ site.url | append: page.og-image}}" />{% else %}<meta property="og:image" content="{{ site.url | append: site.og-image}}" />{% endif %}
 {% if page.description %}<meta property="og:description" content="{{page.description}}" />{% else %}<meta property="og:description" content="{{site.description}}" />{% endif %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, noai, noimageai">
