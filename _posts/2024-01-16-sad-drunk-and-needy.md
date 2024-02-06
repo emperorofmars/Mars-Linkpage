@@ -1,7 +1,7 @@
 ---
 layout: avatar-showcase
-title: YAF - Yet Another Fox | Sad Drunk and Needy Promo
-description: Fox Avatar Base for VRChat, ChilloutVR, VRM | Sad Drunk and Needy Promo
+title: YAF - Yet Another Fox | Special Whsprs Album Release Promo
+description: Fox Avatar Base for VRChat, ChilloutVR, VRM | Special Whsprs Album Release Promo
 categories: avatar
 permalink: /product/:title
 icon: /assets/img/yaf/favicon.png
@@ -15,6 +15,6 @@ hidden: true
 Fox Avatar Base for VRChat, ChilloutVR, VRM
 ### Become the **[FOX BOY](https://www.youtube.com/watch?v=2tHqjciPEX8)** on the internet people will fall in love with!
 
-Claim your special **Whsprs Promo** -25% discount!
+Claim your special **Whsprs Promo** -20% discount!
 
 Code `SADDRUNKANDNEEDY` is applied automatically on both Itch and Gumroad. Valid until the end of May.
