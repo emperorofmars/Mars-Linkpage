@@ -76,7 +76,11 @@ is_home: true
 								<a role="button" class="outline" style="flex: 1; min-width: 100px;" href="{{post.link_gumroad}}">Gumroad</a>
 							</div>
 							{% else %}
-							<div class="row" style="flex: 1;"><h5 style="margin: auto;">Coming Soon!</h5></div>
+							{% if post.release_date != nil %}
+								<div class="row" style="flex: 1;"><h5 style="margin: auto;">Releases {{post.release_date}}</h5></div>
+							{% else %}
+								<div class="row" style="flex: 1;"><h5 style="margin: auto;">Coming Soon!</h5></div>
+							{% endif %}
 							{% endif %}
 						</div>
 						{% endif %}
