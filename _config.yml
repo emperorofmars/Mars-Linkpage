@@ -28,8 +28,8 @@ url: "https://mars.squirrel.pub" # the base hostname & protocol for your site, e
 # github_username:  jekyll
 
 
-icon: /assets/img/favicon.svg
-og_image: /assets/img/preview.png
+favicon: assets/img/favicon.svg
+og_image: assets/img/preview.png
 
 meta_see_also:
   - "https://squirrel.pub/@mars"

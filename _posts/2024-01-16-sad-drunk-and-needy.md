@@ -4,7 +4,7 @@ title: YAF - Yet Another Fox | Special Whsprs Album Release Promo
 description: Fox Avatar Base for VRChat, ChilloutVR, VRM | Special Whsprs Album Release Promo
 categories: avatar
 permalink: /product/:title
-icon: /assets/img/yaf/favicon.png
+favicon: /assets/img/yaf/favicon.png
 preview: /assets/img/yaf/icon.png
 og_image: /assets/img/yaf/preview.png
 cover_image: /assets/img/yaf/cover.png

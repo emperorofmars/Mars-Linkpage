@@ -1,7 +1,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 {% if page.title %}<title>{{page.title}}</title>{% else %}<title>{{site.title}}</title>{% endif %}
-{% if page.icon %}<link rel="shortcut icon" href="{{ page.icon | relative_url }}" />{% else %}<link rel="shortcut icon" href="{{ site.icon | relative_url }}" />{% endif %}
+{% if page.favicon %}<link rel="shortcut icon" href="{{ page.favicon | relative_url }}" />{% else %}<link rel="shortcut icon" href="{{ site.favicon | relative_url }}" />{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/pico.min.css' | relative_url }}" />
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 <link rel="home" href="{{site.url}}">
