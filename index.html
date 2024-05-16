@@ -57,38 +57,7 @@ is_home: true
 		<article>
 			<header><h3>Check out my Avatars</h3></header>
 			<main>
-				<section class="row-scroll" style="gap: 16px; padding-bottom: 20px; margin-bottom: 20px;">
-					{% for post in site.posts %}
-						{% if post.hidden != true %}
-						<div class="col showcase border {% if post.is_page != false %}showcase-link{% endif %}">
-							{% if post.is_page != false %}
-							<a class="col" href="{{post.url}}">
-								<div class="row" style="flex: 1;"><h4 style="margin-bottom: 0; padding: 20px 10px; height: 100px;">{{post.title}}</h4></div>
-								<img src="{{post.preview}}">
-							</a>
-							{% else %}
-							<div class="col">
-								<div class="row" style="flex: 1;"><h4 style="margin-bottom: 0; padding: 20px 10px; height: 100px;">{{post.title}}</h4></div>
-								<img src="{{post.preview}}">
-							</div>
-							{% endif %}
-							{% if post.has_links != false %}
-							<div class="row" style="gap: 10px; padding: 10px; flex: 1;">
-								{% if post.link_itch != nil %}<a role="button" class="outline" style="flex: 1; min-width: 80px; font-size: 0.85rem;" href="{{post.link_itch}}">Itch</a>{% endif %}
-								{% if post.link_jinxxy != nil %}<a role="button" class="outline" style="flex: 1; min-width: 80px; font-size: 0.85rem;" href="{{post.link_jinxxy}}">Jinxxy</a>{% endif %}
-								{% if post.link_gumroad != nil %}<a role="button" class="outline" style="flex: 1; min-width: 80px; font-size: 0.85rem;" href="{{post.link_gumroad}}">Gumroad</a>{% endif %}
-							</div>
-							{% else %}
-							{% if post.release_date != nil %}
-							<div class="row" style="flex: 1;"><h5 style="margin: auto;">Releases {{post.release_date}}</h5></div>
-							{% else %}
-							<div class="row" style="flex: 1;"><h5 style="margin: auto;">Coming Soon!</h5></div>
-							{% endif %}
-							{% endif %}
-						</div>
-						{% endif %}
-					{% endfor %}
-				</section>
+				{% include post-flex.html filter="avatar" %}
 				<p>
 					If you need help with an avatar, please refer to the <a role="button" class="secondary" href="https://avatar-guide.squirrel.pub/">Avatar Guide</a>
 				</p>
@@ -102,12 +71,13 @@ is_home: true
 			<header><h3>Fileformat Project for 3D Models & Avatars</h3></header>
 			<main style="text-align: left;">
 				<p>
-					The single relevant format for VR & V-Tubing avatars is a .unitypackage that contains a scene with a setup somewhere.<br>
+					The single relevant format for VR & V-Tubing avatars is a <i style="font-style: italic;">.unitypackage</i> that contains a scene with a setup somewhere.<br>
 					There is no interoperability for avatars. And it is severely lacking for 3D models by themselves.<br>
 					Using those avatars as an end-user is prohibitively difficult as it requires the use of a Game-Engine like Unity.
 				</p>
 				<p>
 					I'm trying to improve that, by creating a truly extensible file-format for 3d models, with the capability to be easily extended with VR avatar components, that is agnostic of any game-engine or application.<br>
+					With such a format existing, an end-user friendly character-editor application could be created. Users could create their VR & V-Tubing avatars once, without the need for technical knowledge, and be able to use it everywhere.<br>
 					<strong>You can view my progress in the <a role="button" class="secondary" href="https://github.com/emperorofmars/stf-unity">STF Git Repository</a></strong>
 				</p>
 			</main>
