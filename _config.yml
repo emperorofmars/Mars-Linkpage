@@ -28,7 +28,7 @@ url: "https://mars.squirrel.pub" # the base hostname & protocol for your site, e
 # github_username:  jekyll
 
 
-favicon: assets/img/favicon.svg
+favicon: assets/img/favicon.png
 og_image: assets/img/preview.png
 
 meta_see_also:
@@ -41,6 +41,7 @@ meta_see_also:
   - "https://jinxxy.com/emperorofmars/products"
   - "https://emperorofmars.gumroad.com/"
   - "https://www.youtube.com/@emperor_of_mars"
+  - "https://www.furtrack.com/user/mars/fursuiting"
 
 # Build settings
 # theme: minima
