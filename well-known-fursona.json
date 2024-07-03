@@ -7,16 +7,16 @@ permalink: /.well-known/fursona
 		{
 			"name": "Mars",
 			"gender": "Male",
-			"species": "Eurasian Red Squirrel",
+			"species": "Eurasian Red Squirrel (Sciurus Vulgaris)",
 			"description": "*squeak*",
-			"ref": "https://www.furaffinity.net/view/54120717/",
-			"avatar": "https://squirrel.pub/system/accounts/avatars/110/859/683/735/156/207/original/31498c078eb34a82.png",
+			"ref": "https://www.furaffinity.net/view/57127275/",
+			"avatar": "https://squirrel.pub/system/accounts/avatars/110/859/683/735/156/207/original/fc5aff0459a09337.png",
 			"colors": [
-				"#854b3a",
-				"#d9b2a3",
-				"#66382b",
-				"#ea7e7e",
-				"#0076CD",
+				"#B4634F",
+				"#E5B6A4",
+				"#EA7E7E",
+				"#714033",
+				"#1D90E4",
 				"#53C1D0"
 			]
 		}
