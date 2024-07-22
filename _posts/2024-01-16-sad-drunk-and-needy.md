@@ -8,8 +8,8 @@ favicon: /assets/img/yaf/favicon.png
 preview: /assets/img/yaf/icon.png
 og_image: /assets/img/yaf/preview.png
 cover_image: /assets/img/yaf/cover.png
-link_itch: https://emperorofmars.itch.io/saddrunkandneedy
-link_gumroad: https://emperorofmars.gumroad.com/l/yaf/saddrunkandneedy
+link_itch: https://squirrelbite.itch.io/saddrunkandneedy
+link_gumroad: https://squirrelbite.gumroad.com/l/yaf/saddrunkandneedy
 hidden: true
 ---
 Fox Avatar Base for VRChat, ChilloutVR, VRM
