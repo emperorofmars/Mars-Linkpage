@@ -1,5 +1,5 @@
 ---
-layout: avatar-showcase
+layout: avatar-showcase_lagacy
 title: YAF - Yet Another Fox | Special Whsprs Album Release Promo
 description: Fox Avatar Base for VRChat, ChilloutVR, VRM | Special Whsprs Album Release Promo
 categories: avatar
