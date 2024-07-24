@@ -31,6 +31,29 @@ url: "https://mars.squirrel.pub" # the base hostname & protocol for your site, e
 favicon: /assets/img/favicon.png
 og_image: /assets/img/preview.png
 
+header_socials:
+  - name: Mastodon
+    icon: /assets/icons/icon_mastodon.svg
+    link: https://squirrel.pub/@mars
+  - name: Bluesky
+    icon: /assets/icons/icon_bluesky.svg
+    link: https://bsky.app/profile/mars.squirrel.pub
+  - name: Twatter
+    icon: /assets/icons/icon_twatter.svg
+    link: https://twitter.com/Emperor_of_Mars
+  - name: Furaffinity
+    icon: /assets/icons/icon_furaffinity.png
+    link: https://www.furaffinity.net/user/emperorofmars
+  - name: Furtrack
+    icon: /assets/icons/icon_furtrack.png
+    link: https://www.furtrack.com/user/mars/fursuiting
+  - name: Youtube
+    icon: /assets/icons/icon_youtube.svg
+    link: https://www.youtube.com/@emperor_of_mars
+  - name: Github
+    icon: /assets/icons/icon_github.svg
+    link: https://github.com/emperorofmars
+
 meta_see_also:
   - "https://squirrelbite.com"
   - "https://squirrel.pub/@mars"
@@ -49,6 +72,15 @@ meta_see_also:
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+# - jekyll-minifier
+
+sass:
+  sass_dir: _sass
+#  style: compressed
+
+include: [".well-known", ".htaccess"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.

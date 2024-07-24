@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	{% include head.html %}
+	{% include base/head_legacy.html %}
 </head>
 <body style="text-align: center;">
-	{% include header.html %}
+	{% include base/header.html %}
 
 	<main class="container">
 		<h1 style="font-weight: 900; font-size: 3rem;">{{page.title}}</h1>
@@ -22,6 +22,6 @@
 		<img src="{{page.cover_image}}" style="margin-top: 30px; border-radius: var(--pico-border-radius); box-shadow: 0 0 20px;">
 	</main>
 
-	{% include footer.html %}
+	{% include base/footer.html %}
 </body>
 </html>

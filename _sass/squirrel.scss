@@ -1,0 +1,103 @@
+
+body {
+	width: $size_xxl;
+	min-height: 100vh;
+	margin: auto;
+	padding: 20px;
+
+	color: $color-text;
+	background-color: $color-bg;
+
+	display: grid;
+	grid-template:
+		"portrait hi" min-content
+		"socials socials" min-content
+		"avatars avatars" min-content
+		". ." auto
+		"footer footer" min-content
+		/ min-content 1fr ;
+	gap: 30px;
+}
+
+@media (max-width: $break_xs) { body {
+	grid-template:
+		". portrait ."
+		". hi ."
+		". socials ."
+		". avatars ."
+		". footer .";
+	align-items: center;
+	justify-content: center;
+} }
+
+@media (max-width: $break_xl) { body { width: $size_xl; } }
+@media (max-width: $break_l) { body { width: $size_l; } }
+@media (max-width: $break_m) { body { width: $size_m; } html { font-size: 1.2em; } }
+@media (max-width: $break_s) { body { width: $size_s; } }
+@media (max-width: $break_xs) { body { width: $size_xs; } html { font-size: 1em; } }
+
+#portrait {
+	grid-area: portrait;
+	width: 16em;
+	border-radius: 10%;
+	align-self: center;
+	justify-self: start;
+	background-color: $color-bg-card;
+}
+@media (max-width: $break_m) { #portrait { width: 250px; } }
+@media (max-width: $break_xs) { #portrait { width: 200px; margin: auto; } }
+
+#hi {
+	grid-area: hi;
+	//align-self: end;
+	align-self: center;
+
+	#squirrelbite-link {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 12px;
+		column-gap: 12px;
+		align-items: baseline;
+	}
+}
+
+#socials {
+	grid-area: socials;
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	column-gap: 30px;
+	//width: fit-content;
+	//margin: 0 auto;
+	align-items: center;
+	
+	div {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: start;
+		justify-content: start;
+	}
+}
+@media (max-width: $break_xs) { #socials { flex-direction: column; align-items: start; } }
+
+#avatars {
+	grid-area: avatars;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+footer {
+	grid-area: footer;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+}

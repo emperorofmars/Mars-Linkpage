@@ -1,0 +1,141 @@
+
+$color-pop: #faa !default;
+$color-bg: #444 !default;
+$color-bg-card: #555 !default;
+$color-bg-card-highlight: mix($color-bg-card, #fff, 95%) !default;
+$color-text: #fff !default;
+$color-text-pop: $color-bg-card !default;
+$color-text-muted: #888 !default;
+$color-btn-text: $color-text !default;
+$color-btn-bg: #777 !default;
+$color-btn-text-highlight: $color-btn-text !default;
+$color-btn-bg-highlight: mix($color-btn-bg, #fff, 80%) !default;
+$color-btn-pop-text: $color-text-pop !default;
+$color-btn-pop-bg: $color-pop !default;
+$color-btn-pop-text-highlight: $color-btn-pop-text !default;
+$color-btn-pop-bg-highlight: mix($color-btn-pop-bg, #fff, 60%) !default;
+
+$logo-size: 300px !default;
+
+$break_xs: 576px !default; // Extra small <576px 100%
+$break_s: 768px !default; // Small ≥576px 510px
+$break_m: 1024px !default; // Medium ≥768px 700px
+$break_l: 1280px !default; // Large ≥1024px 950px
+$break_xl: 1536px !default; // Extra large ≥1280px 1200px
+$break_xxl: 1536px !default; // Extra extra large ≥1536px 1450px
+
+$size_xs: 100% !default; // Extra small <576px 100%
+$size_s: 510px !default; // Small ≥576px 510px
+$size_m: 700px !default; // Medium ≥768px 700px
+$size_l: 950px !default; // Large ≥1024px 950px
+$size_xl: 1200px !default; // Extra large ≥1280px 1200px
+$size_xxl: 1450px !default; // Extra extra large ≥1536px 1450px
+
+* { box-sizing: border-box; }
+
+:root {
+	--color-pop: #{$color-pop};
+	--color-bg: #{$color-bg};
+	--color-bg-card: #{$color-bg-card};
+	--color-bg-card-highlight: #{$color-bg-card-highlight};
+	--color-text: #{$color-text};
+	--color-text-pop: #{$color-text-pop};
+	--color-text-muted: #{$color-text-muted};
+	--color-btn-text: #{$color-btn-text};
+	--color-btn-bg: #{$color-btn-bg};
+	--color-btn-text-highlight: #{$color-btn-text-highlight};
+	--color-btn-bg-highlight: #{$color-btn-bg-highlight};
+	--color-btn-pop-text: #{$color-btn-pop-text};
+	--color-btn-pop-bg: #{$color-btn-pop-bg};
+	--color-btn-pop-text-highlight: #{$color-btn-pop-text-highlight};
+	--color-btn-pop-bg-highlight: #{$color-btn-pop-bg-highlight};
+
+	--break_xs: #{$break_xs};
+	--break_s: #{$break_s};
+	--break_m: #{$break_m};
+	--break_l: #{$break_l};
+	--break_xl: #{$break_xl};
+	--break_xxl: #{$break_xxl};
+
+	--size_xs: #{$size_xs};
+	--size_s: #{$size_s};
+	--size_m: #{$size_m};
+	--size_l: #{$size_l};
+	--size_xl: #{$size_xl};
+	--size_xxl: #{$size_xxl};
+
+	--logo-size: #{$logo-size};
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0;
+
+	line-height: 1.3; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+.s { font-size: 0.8em; }
+.ss { font-size: 0.6em; }
+.sss { font-size: 0.4em; }
+.ssss { font-size: 0.3em; }
+.l { font-size: 1.2em; }
+.ll { font-size: 1.4em; }
+.lll { font-size: 1.75em; }
+.llll { font-size: 2em; }
+
+img {
+	object-fit: cover;
+	height: auto;
+	width: auto;
+}
+
+[role=button] {
+	display: inline-block;
+	color: $color-btn-text;
+	background-color: $color-btn-bg;
+	text-decoration: none;
+	padding: 15px 20px;
+	border-radius: 10px;
+	text-align: center;
+	transition: background-color 0.1s;
+}
+[role=button]:hover {
+	text-decoration: none;
+	color: $color-btn-text-highlight;
+	background-color: $color-btn-bg-highlight;
+}
+[role=button].small {
+	padding: 6px 10px;
+	font-size: 0.666rem;
+}
+[role=button].medium {
+	padding: 8px 12px;
+	font-size: 0.82rem;
+}
+[role=button].pop {
+	font-weight: 900;
+	color: $color-btn-pop-text;
+	background-color: $color-btn-pop-bg;
+	transition: background-color 0.1s;
+}
+[role=button].pop:hover {
+	color: $color-btn-pop-text-highlight;
+	background-color: $color-btn-pop-bg-highlight;
+}
+
+.icon {
+	background-color: $color-pop;
+	mask-image: var(--icon-url);
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	align-self: center;
+	width: 1em;
+	height: 1em;
+}
+
+a {
+	color: $color-text;
+}

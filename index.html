@@ -1,93 +1,24 @@
 ---
-is_home: true
+layout: mars
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	{% include head.html %}
-</head>
-<body style="text-align: center;">
-	{% include header.html %}
+<img id="portrait" srcset="{{ '/assets/base/mars.png' | relative_url }} 500w, {{ '/assets/base/mars_s.png' | relative_url }} 250w" width="500" height="728" alt="Portrait of my squirrel character.">
 
-	<main class="container">
-		<section class="grid">
-			<div class="col border" style="border-width: 5px; gap: 40px; margin: auto; height: 100%; padding: 10px; width: 100%;">
-				<img src="{{ '/assets/img/portrait.png' | relative_url }}" style="margin: 0 30px; width: 300px; margin: auto;"/>
-				<div>
-					<h1>Hoi, I'm Mars</h1>
-					<p>Often my username is also <strong>Emperor of Mars</strong></p>
-					<h3>
-						I make 3D avatar bases and assets for social VR games!<br><br>
-						View them at <a role="button" class="big-button" href="https://squirrelbite.com">Squirrelbite.com</a>
-					<h3>
-				</div>
-			</div>
-			<div class="col" style="gap: 40px; margin: auto; justify-content: space-evenly; height: 100%; padding: 30px 0;">
-				<div>
-					<h3>Browse all my products on</h3>
-					<div class="row">
-						<a role="button" class="big-button" href="https://squirrelbite.itch.io/" style="width: 180px;"><span>Itch</span></a>
-						<a role="button" class="big-button" href="https://jinxxy.com/squirrelbite/products" style="width: 180px;"><span>Jinxxy</span></a>
-						<a role="button" class="big-button" href="https://squirrelbite.gumroad.com/" style="width: 180px;"><span>Gumroad</span></a>
-					</div>
-				</div>
-				<div>
-					<h3>Socials</h3>
-					<div class="row">
-						<a role="button" class="outline" rel="me" href="https://squirrel.pub/@mars">Mastodon</a>
-						<a role="button" class="outline" href="https://bsky.app/profile/mars.squirrel.pub">Bluesky</a>
-						<a role="button" class="outline" href="https://www.furaffinity.net/user/emperorofmars">Furaffinity</a>
-						<a role="button" class="outline" href="https://twitter.com/Emperor_of_Mars">Twatter</a>
-						<a role="button" class="outline" href="https://www.youtube.com/@emperor_of_mars">Youtube</a>
-						<a role="button" class="outline" href="https://www.furtrack.com/user/mars/fursuiting">Furtrack</a>
-					</div>
-				</div>
-				<div>
-					<h3>Communities</h3>
-					<div class="row">
-						<a role="button" class="outline" href="https://discord.gg/MDggMXSttM">Discord Server</a>
-						<a role="button" class="outline" href="https://vrc.group/SQRL.0269">VRChat Group</a>
-					</div>
-				</div>
-				<div>
-					<h3>Coding Projects</h3>
-					<div class="row">
-						<a role="button" class="outline" href="https://github.com/emperorofmars">Github</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--<article>
-			<header><h3>Check out my Avatars</h3></header>
-			<main>
-				{% include post-flex.html filter="avatar" %}
-				<p>
-					If you need help with an avatar, please refer to the <a role="button" class="secondary" href="https://avatar-guide.squirrel.pub/">Avatar Guide</a>
-				</p>
-				<p style="border-top: 4px solid var(--mars-color-border);">
-					<h5>Awesome people who's amazing texture work is contained in my products</h5>
-					<strong><a role="button" class="outline" href="https://astralmimi.art">Astralmimi</a></strong>
-				</p>
-			</main>
-		</article>
-		<article>
-			<header><h3>Fileformat Project for 3D Models & Avatars</h3></header>
-			<main style="text-align: left;">
-				<p>
-					The single relevant format for VR & V-Tubing avatars is a <i style="font-style: italic;">.unitypackage</i> that contains a scene with a setup somewhere.<br>
-					There is no interoperability for avatars. And it is severely lacking for 3D models by themselves.<br>
-					Using those avatars as an end-user is prohibitively difficult as it requires the use of a Game-Engine like Unity.
-				</p>
-				<p>
-					I'm trying to improve that, by creating a truly extensible file-format for 3d models, with the capability to be easily extended with VR avatar components, that is agnostic of any game-engine or application.<br>
-					With such a format existing, an end-user friendly character-editor application could be created. Users could create their VR & V-Tubing avatars once, without the need for technical knowledge, and be able to use it everywhere.<br>
-					<strong>You can view my progress in the <a role="button" class="secondary" href="https://github.com/emperorofmars/stf-unity">STF Git Repository</a></strong>
-				</p>
-			</main>
-		</article>
-	</main>-->
+<div id="hi">
+	<h1>Hi, I'm Mars</h1>
+	<p class="s">Often my username is also <strong>Emperor of Mars</strong></p>
+	<p>I make 3D avatar bases and assets for social VR games!</p>
+	<!--<p class="l" id="squirrelbite-link">View them at <a role="button" class="pop" href="https://squirrelbite.com">Squirrelbite.com</a></p>-->
+	<p class="ll" id="squirrelbite-link"><span>View them at:</span><a class="icon" style="--icon-url: url({{'/assets/base/squirrelbite.svg' | relative_url}}); width: 8em; height: 8em;" href="https://squirrelbite.com" title="squirrelbite.com"></a></p>
+</div>
 
-	{% include footer.html %}
-</body>
-</html>
+<div id="socials">
+	<h2 class="l">Socials:</h2>
+	<div>
+	{% for social in site.header_socials %}
+		<a href="{{social.link}}" class="icon llll" style="--icon-url: url({{social.icon | relative_url}});" title="{{social.name}}" {% if social.name == "Mastodon" %} rel="me" {% endif %}></a>
+	{% endfor %}
+	</div>
+</div>
+
+<a id="avatars" href="https://squirrelbite.com/avatars" title="View avatars"><img srcset="{{ '/assets/base/Squirrelbite Flyer website.png' | relative_url }} 1400w, {{ '/assets/base/Squirrelbite Flyer website_s.png' | relative_url }} 900w, {{ '/assets/base/Squirrelbite Flyer website_ss.png' | relative_url }} 500w" width="1400" height="847" alt="Screenshot of my squirrel, fox and cheetah avatars."></a>
