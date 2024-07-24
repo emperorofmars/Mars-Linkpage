@@ -28,7 +28,7 @@ url: "https://mars.squirrel.pub" # the base hostname & protocol for your site, e
 # github_username:  jekyll
 
 
-favicon: /assets/base/paw.png
+favicon: /assets/base/paw.svg
 og_image: /assets/base/Squirrelbite Flyer website.png
 
 header_socials:
