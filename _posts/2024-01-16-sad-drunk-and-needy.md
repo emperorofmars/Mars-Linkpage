@@ -1,5 +1,5 @@
 ---
-layout: avatar-showcase_lagacy
+layout: legacy_redirect
 title: YAF - Yet Another Fox | Special Whsprs Album Release Promo
 description: Fox Avatar Base for VRChat, ChilloutVR, VRM | Special Whsprs Album Release Promo
 categories: avatar
@@ -11,6 +11,7 @@ cover_image: /assets/img/yaf/cover.png
 link_itch: https://squirrelbite.itch.io/saddrunkandneedy
 link_gumroad: https://squirrelbite.gumroad.com/l/yaf/saddrunkandneedy
 hidden: true
+redirect: https://squirrelbite.com/avatars/yaf
 ---
 Fox Avatar Base for VRChat, ChilloutVR, VRM
 ### Become the **[FOX BOY](https://www.youtube.com/watch?v=2tHqjciPEX8)** on the internet people will fall in love with!
