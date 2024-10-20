@@ -38,9 +38,6 @@ header_socials:
   - name: Bluesky
     icon: /assets/icons/icon_bluesky.svg
     link: https://bsky.app/profile/mars.squirrel.pub
-  - name: Twatter
-    icon: /assets/icons/icon_twatter.svg
-    link: https://twitter.com/Emperor_of_Mars
   - name: Furaffinity
     icon: /assets/icons/icon_furaffinity.png
     link: https://www.furaffinity.net/user/emperorofmars
